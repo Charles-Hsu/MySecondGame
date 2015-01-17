@@ -24,8 +24,8 @@ So far so good,
 
 degree to radians
 
-[](http://www.teacherschoice.com.au/Maths_Library/Angles/Angles14.gif)
+![](http://www.teacherschoice.com.au/Maths_Library/Angles/Angles14.gif)
 
 radians to degree
 
-[](http://www.teacherschoice.com.au/Maths_Library/Angles/Angles15.gif)
+![](http://www.teacherschoice.com.au/Maths_Library/Angles/Angles15.gif)
