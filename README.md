@@ -20,7 +20,7 @@ override func supportedInterfaceOrientations() -> Int {
 
 How ever, you alos need to change the Device Orientation of Deployment Info in the General Tab of the TARGETS, and modified the Info.plist to remove the items of the Supported interface orientations(iPad).
 
-So far so good, 
+So far so good, but before we go on, we need to talk about the radians.
 
 degree to radians
 

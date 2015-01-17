@@ -12,6 +12,10 @@ class GameScene: SKScene {
 
   let heroSprite = SKSpriteNode(imageNamed: "Spaceship")
   let invisibleControllerSprite = SKSpriteNode()
+  
+  var enemySprites = EnemySpriteController()
+  
+  var lastShootTime: CFTimeInterval = 1
 
   override func didMoveToView(view: SKView) {
     
@@ -27,11 +31,20 @@ class GameScene: SKScene {
     
     // Define a constraint for the orientation behavior
     let rangeForOrientation = SKRange(constantValue: CGFloat(M_2_PI * 7))
+    // But, why ???
     
     // M_2_PI == 2 / π == 0.636619772367581
     
     heroSprite.constraints = [SKConstraint.orientToNode(
       invisibleControllerSprite, offset: rangeForOrientation)]
+    
+    // Add enemy sprites
+    for var i=0; i<3; i++ {
+      addChild(enemySprites.spawnEnemy(heroSprite))
+    }
+    
+    
+    
   }
   
   override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -77,5 +90,13 @@ class GameScene: SKScene {
   
   override func update(currentTime: CFTimeInterval) {
     /* Called before each frame is rendered */
+    
+    if currentTime - lastShootTime >= 1 {
+      enemySprites.shoot(heroSprite)
+      lastShootTime = currentTime
+    }
+    
+    
+    
   }
 }

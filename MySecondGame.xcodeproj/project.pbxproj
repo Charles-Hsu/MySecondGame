@@ -14,6 +14,7 @@
 		C2180F801A6A18C800971502 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2180F7F1A6A18C800971502 /* Images.xcassets */; };
 		C2180F831A6A18C800971502 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2180F811A6A18C800971502 /* LaunchScreen.xib */; };
 		C2180F8F1A6A18C900971502 /* MySecondGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2180F8E1A6A18C900971502 /* MySecondGameTests.swift */; };
+		C2180F9B1A6A29DC00971502 /* EnemySpriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2180F9A1A6A29DC00971502 /* EnemySpriteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		C2180F8D1A6A18C900971502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2180F8E1A6A18C900971502 /* MySecondGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySecondGameTests.swift; sourceTree = "<group>"; };
 		C2180F981A6A195100971502 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2180F9A1A6A29DC00971502 /* EnemySpriteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemySpriteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				C2180F741A6A18C800971502 /* AppDelegate.swift */,
 				C2180F781A6A18C800971502 /* GameScene.swift */,
+				C2180F9A1A6A29DC00971502 /* EnemySpriteController.swift */,
 				C2180F7A1A6A18C800971502 /* GameViewController.swift */,
 				C2180F7C1A6A18C800971502 /* Main.storyboard */,
 				C2180F7F1A6A18C800971502 /* Images.xcassets */,
@@ -220,6 +223,7 @@
 				C2180F791A6A18C800971502 /* GameScene.swift in Sources */,
 				C2180F7B1A6A18C800971502 /* GameViewController.swift in Sources */,
 				C2180F751A6A18C800971502 /* AppDelegate.swift in Sources */,
+				C2180F9B1A6A29DC00971502 /* EnemySpriteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
